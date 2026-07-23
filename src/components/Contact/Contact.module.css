@@ -1,0 +1,40 @@
+.heading {
+  font-size: clamp(26px, 4vw, 38px);
+  max-width: 20ch;
+  margin-bottom: 16px;
+}
+
+.location {
+  font-family: var(--font-mono);
+  color: var(--muted);
+  font-size: 15px;
+  margin-bottom: clamp(32px, 5vw, 48px);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 22px;
+}
+
+.label {
+  font-family: var(--font-mono);
+  color: var(--muted);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+}
+
+.value {
+  font-size: 16px;
+  font-weight: 500;
+  word-break: break-word;
+}
