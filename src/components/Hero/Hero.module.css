@@ -1,0 +1,81 @@
+.hero {
+  padding-top: clamp(48px, 8vw, 96px);
+  padding-bottom: clamp(64px, 9vw, 116px);
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: clamp(28px, 5vw, 56px);
+}
+
+.avatar {
+  width: clamp(130px, 20vw, 188px);
+  height: clamp(130px, 20vw, 188px);
+  border-radius: 24px;
+  object-fit: cover;
+  border: 1px solid var(--accent);
+  box-shadow: 0 0 0 8px var(--accent-dim);
+  flex-shrink: 0;
+}
+
+.text {
+  flex: 1 1 420px;
+  min-width: 0;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  color: var(--muted);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 20px;
+}
+
+.headline {
+  font-size: clamp(32px, 5.5vw, 56px);
+  margin-bottom: 20px;
+}
+
+.accentText {
+  color: var(--accent);
+}
+
+.subline {
+  font-size: clamp(16px, 2vw, 19px);
+  color: var(--text);
+  max-width: 60ch;
+  margin-bottom: 24px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--accent);
+  background: var(--accent-dim);
+  border-radius: 999px;
+  padding: 8px 16px;
+  margin-bottom: 28px;
+}
+
+.cvButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--accent);
+  color: var(--bg);
+  font-family: var(--font-mono);
+  font-weight: 500;
+  padding: 12px 22px;
+  border-radius: 8px;
+}
+
+.cvButton:hover {
+  color: var(--bg);
+  opacity: 0.9;
+}
