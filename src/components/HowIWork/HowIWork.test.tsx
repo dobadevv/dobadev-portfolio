@@ -6,7 +6,7 @@ class MockIntersectionObserver {
   observe = vi.fn()
   disconnect = vi.fn()
   unobserve = vi.fn()
-  constructor(_callback: IntersectionObserverCallback) {}
+  constructor() {}
 }
 
 beforeEach(() => {
