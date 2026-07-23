@@ -1,0 +1,7 @@
+.statement {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: clamp(17px, 2.1vw, 23px);
+  color: var(--text-bright);
+  max-width: 46ch;
+}
