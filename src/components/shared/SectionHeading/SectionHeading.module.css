@@ -1,0 +1,15 @@
+.heading {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  font-size: clamp(20px, 3vw, 30px);
+  letter-spacing: 0.02em;
+  color: var(--text-bright);
+  margin-bottom: clamp(32px, 5vw, 56px);
+}
+
+.number {
+  color: var(--accent);
+}
