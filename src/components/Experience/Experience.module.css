@@ -1,0 +1,65 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  border-bottom: 1px solid var(--border);
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.rowInner {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+@media (max-width: 560px) {
+  .rowInner {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+.dateCell {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.date {
+  font-family: var(--font-mono);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.currentBadge {
+  display: inline-block;
+  align-self: flex-start;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--accent);
+  background: var(--accent-dim);
+  border-radius: 999px;
+  padding: 3px 10px;
+  letter-spacing: 0.04em;
+}
+
+.companyRole {
+  font-size: 16px;
+  color: var(--text-bright);
+  margin-bottom: 6px;
+}
+
+.company {
+  font-weight: 600;
+}
+
+.description {
+  color: var(--muted);
+  font-size: 14px;
+}
