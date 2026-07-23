@@ -13,7 +13,7 @@ export function RevealOnScroll({ children, delayMs = 0 }: RevealOnScrollProps) {
   return (
     <div
       ref={ref}
-      className={`${styles.reveal} ${isVisible ? styles.isVisible : ''}`}
+      className={`${styles.reveal} ${isVisible ? styles.isVisible : styles.isHidden}`}
       style={{ transitionDelay: `${delayMs}ms` }}
     >
       {children}
