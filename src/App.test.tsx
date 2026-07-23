@@ -29,6 +29,7 @@ describe('App', () => {
     const skipLink = screen.getByRole('link', { name: /skip to main content/i })
     expect(skipLink).toHaveAttribute('href', '#main-content')
     expect(screen.getByRole('main')).toHaveAttribute('id', 'main-content')
+    expect(screen.getByRole('main')).toHaveAttribute('tabindex', '-1')
   })
 
   it('every header nav link href resolves to a real section id on the page', () => {
