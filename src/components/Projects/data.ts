@@ -23,4 +23,12 @@ export const projects: Project[] = [
       'A platform where people post invitations and apply to others to connect and date anonymously. Go backend on chi + sqlc + pgx/v5 with goose migrations, and MinIO object storage using a dual-endpoint presigned-URL pattern for secure, correct media delivery across environments.',
     tags: ['Go', 'chi', 'sqlc', 'pgx/v5', 'goose', 'Next.js', 'MinIO'],
   },
+  {
+    title: 'eslint-plugin-go-fmt',
+    url: 'https://github.com/dobadevv/eslint-plugin-go-fmt',
+    subtitle: 'gofmt-style column alignment for ESLint',
+    description:
+      "An ESLint plugin that brings gofmt's struct-field column alignment to TypeScript and JavaScript, lining up the `:` and `=` in object literals, class bodies, interfaces, and type literals. Auto-fixable and Prettier-aware — it inserts a targeted `prettier-ignore` so the alignment survives `prettier --write`.",
+    tags: ['TypeScript', 'ESLint', 'AST', 'Developer tooling'],
+  },
 ]
