@@ -31,4 +31,12 @@ export const projects: Project[] = [
       "An ESLint plugin that brings gofmt's struct-field column alignment to TypeScript and JavaScript, lining up the `:` and `=` in object literals, class bodies, interfaces, and type literals. Auto-fixable and Prettier-aware — it inserts a targeted `prettier-ignore` so the alignment survives `prettier --write`.",
     tags: ['TypeScript', 'ESLint', 'AST', 'Developer tooling'],
   },
+  {
+    title: 'rmqtui',
+    url: 'https://github.com/dobadevv/rmqtui',
+    subtitle: 'A terminal UI for managing RabbitMQ',
+    description:
+      'A keyboard-driven TUI for RabbitMQ that browses queues, exchanges, and bindings and lets you create, bind, purge, and publish without leaving the terminal. Peeks messages non-destructively via basic_get with requeue and tails queues in real time, talking to both the AMQP protocol and the management HTTP API. Ships as prebuilt binaries and on crates.io.',
+    tags: ['Rust', 'TUI', 'RabbitMQ', 'AMQP'],
+  },
 ]
