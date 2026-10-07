@@ -8,12 +8,11 @@ export interface ExperienceEntry {
 
 export const experienceEntries: ExperienceEntry[] = [
   {
-    dateRange: 'Sep 2024 – Present',
+    dateRange: 'Sep 2024 – May 2026',
     company: 'Finviet',
     role: 'Backend Engineer',
     description:
       'Building ECOPOS, a multi-tenant POS/e-commerce/DMS platform, from scratch with Clean Architecture — NestJS, Kafka, RabbitMQ, BullMQ, PostgreSQL, Redis, Elasticsearch.',
-    current: true,
   },
   {
     dateRange: 'Jul 2023 – Aug 2024',

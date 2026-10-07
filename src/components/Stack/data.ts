@@ -4,8 +4,8 @@ export interface StackGroup {
 }
 
 export const stackGroups: StackGroup[] = [
-  { label: 'Languages', items: ['Node.js/TypeScript', 'Go', 'Rust'] },
-  { label: 'Backend', items: ['NestJS', 'Express.js', 'REST', 'GraphQL', 'chi', 'gin'] },
+  { label: 'Languages', items: ['Node.js/TypeScript', 'Go', 'Rust', 'Python'] },
+  { label: 'Backend', items: ['NestJS', 'Express.js', 'REST', 'GraphQL', 'chi', 'gin', 'Django', 'Flask'] },
   { label: 'Data', items: ['PostgreSQL', 'MongoDB', 'Redis'] },
   { label: 'Messaging & async', items: ['Kafka', 'RabbitMQ', 'BullMQ'] },
   {
