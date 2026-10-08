@@ -27,9 +27,10 @@ describe('Experience', () => {
     expect(screen.getAllByRole('listitem')).toHaveLength(experienceEntries.length)
   })
 
-  it('marks only the Finviet entry as CURRENT', () => {
+  it('shows a CURRENT badge only for entries flagged as current', () => {
     render(<Experience />)
-    expect(screen.getAllByText('CURRENT')).toHaveLength(1)
+    const currentEntryCount = experienceEntries.filter((entry) => entry.current).length
+    expect(screen.queryAllByText('CURRENT')).toHaveLength(currentEntryCount)
   })
 
   it('renders each entry\'s date range, company, role, and description', () => {
